@@ -8,23 +8,25 @@
   </head>
   <body>
     <h1>Manipulación del DOM básica</h1>
+    <form id="form">
+      <input
+        onChange="console.log('cambio el input1')"
+        id="calculo1"
+        placeholder="escribe un número"
+      />
+      <p>+</p>
+      <input
+        onChange="console.log('cambio el input2')"
+        id="calculo2"
+        placeholder="escribe otro número"
+      />
+      <br />
+      <br />
+      <button id="btnCalcular" onclick="{console.log('Hola')}">Calcular</button>
+      <br />
+      <p id="result"></p>
+    </form>
 
-    <input
-      onChange="console.log('cambio el input1')"
-      id="calculo1"
-      placeholder="escribe un número"
-    />
-    <p>+</p>
-    <input
-      onChange="console.log('cambio el input2')"
-      id="calculo2"
-      placeholder="escribe otro número"
-    />
-    <br />
-    <br />
-    <button id="btnCalcular" onclick="btnOnClick()">Calcular</button>
-    <br />
-    <p id="result"></p>
     <script src="./script.js"></script>
   </body>
 </html>
